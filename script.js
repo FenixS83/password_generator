@@ -1,6 +1,40 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+function generatePassword() {
+  let passwordLength = prompt("Enter the length of your password");
+
+  if(passwordLength <8 || passwordLength > 128 || isNaN(parseInt(passwordLength))) {
+    alert("Please enter a proper password length between 8 and 128 characters")
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -14,10 +48,25 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 
-var passwordLength = prompt("Enter the length of your password");
-if (parseInt(passwordLength) >= 8 && parseInt(passwordLength) <=128 ){
-    alert("Please enter a proper password")
-} 
+var passwordLength = prompt("");
+if (!enter){
+    alert("Please enter a value")
+} else if (passwordLength >= 8 || passwordLength < 128) {
+    passwordLength = parseInt(prompt());
+
+  } else {
+    confirmhasNumbers = confirm;
+    confirmhasSpecialCharacters = confirm;
+    confirmhasUppercase = confirm;
+    confirmhasLowercase = confirm;
+  };
+
+  if (!confirmhasNumbers && !confirmhasSpecialCharacters && !confirmhasUppercase && !confirmhasLowercase) {
+    selections = alert("You must choose at least one criteria");
+
+  }
+
+  else if (confirmhasNumbers && confirmhasSpecialCharacters && confirmhasUppercase && confirmhasLowercase)
 
 
 
@@ -30,9 +79,14 @@ if (parseInt(passwordLength) >= 8 && parseInt(passwordLength) <=128 ){
 
 
 
+var passwordLength = prompt("Enter the length of your password. Must be between 8-128 characters");
+var hasNumbers = confirm("Would you like to include numbers?")
+var hasSpecialCharacters = confirm("Would you like to include special characters?")
+var hasUppercase = confirm("Would you like to include uppercase letters?")
+var hasLowercase = confirm("Would you like to include lowercase letters?")
+var selections;
 
-
-
+charSetArray = [];
 
 
 var specialCharaters = [
