@@ -26,6 +26,6 @@ This project helped me to learn how to manipulate prompts, confirms and alerts t
 ![The password generator website a white background with a title, a white box with text area where password will be displayed and a red "Generate Password" button.](./Assests/Password Generator Screen Shot.png
 
 ### Link to live website
-
+https://fenixs83.github.io/password_generator/
 
 Thank you so much for checking out my project! If you have any suggestions on how to make it better, please feel free to submit a pull request. 
